@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.tab {
+  float: left;
+  background-color: white;
+  width: 10%;
+  height: 10%;
+}
+
+.tab button {
+  display: block;
+  background-color: #ecf0f3;
+  color: black;
+  padding: 22px 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.tab button:hover {
+  color: #0d6efd;
+}
+
+.tab button.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  margin: 0px 30px;
+  border: none;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  width: 80%;
+  height: 70%;
+  background-color: #a8dadc;
+  border-radius: 10px;
+}
+
+.container {
+  width: auto;
+  margin: 100px;
+}
+
+.btn {
+  background-color: #4b70e2;
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.15;
+  margin: 1rem;
+  padding: 12px 40px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+input,
+select {
+  padding: 10px 15px;
+  margin: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  outline: none;
+  width: 25%;
+  color: black;
+  font-size: 18px;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  background-color: #ECF0F3;
+}
+
+h1 {
+  margin-left: 10px;
+  color: #bc243c;
+}
+
+p {
+  background-color: #d1e7dd;
+  padding: 18px;
+  margin: 20px 1rem;
+  display: flex;
+  border: 2px solid #55b4b0;
+  width: 84%;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+h2,
+h3 {
+  margin: 1rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  color: #ff8a5b;
+  font-weight: bold;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+#demo {
+  display: none;
+}
+
+.connect {
+  display: none;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Hàm</title>
+    <!-- =============================================================== -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Bài Tập Hàm</h4>
+
+      <!-- =============================================================== -->
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'Bai_Tap_1')"
+          id="defaultOpen"
+        >
+          Bài Tập 1
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Bai_Tap_2')">
+          Bài Tập 2
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Bai_Tap_3')">
+          Bài Tập 3
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Bai_Tap_4')">
+          Bài Tập 4
+        </button>
+      </div>
+
+      <!-- =============================================================== -->
+      <div id="Bai_Tap_1" class="tabcontent">
+        <h1>Bài Tập 1</h1>
+        <h2>🏫 Quản lý tuyển sinh</h2>
+        <input id="diemChuan" type="number" placeholder="Điểm chuẩn" />
+        <select id="khuVuc">
+          <option value="0">Chọn khu vực</option>
+          <option value="2">A</option>
+          <option value="1">B</option>
+          <option value="0.5">C</option>
+        </select>
+        <select id="doiTuong">
+          <option value="0">Chọn đối tượng</option>
+          <option value="2.5">1</option>
+          <option value="1.5">2</option>
+          <option value="1">3</option>
+        </select>
+        <input id="diemMon1" type="number" placeholder="Điểm môn thứ 1" />
+        <input id="diemMon2" type="number" placeholder="Điểm môn thứ 2" />
+        <input id="diemMon3" type="number" placeholder="Điểm môn thứ 3" />
+        <button class="btn" onclick="handleResult()">Kết quả</button>
+        <div id="pInform_1">
+          <p>👉</p>
+        </div>
+      </div>
+
+      <!-- =============================================================== -->
+      <div id="Bai_Tap_2" class="tabcontent">
+        <h1>Bài Tập 2</h1>
+        <h2>🔋 Tính tiền điện</h2>
+        <input id="typeName" type="text" placeholder="Nhập họ tên" />
+        <input id="typeKw" type="number" placeholder="Nhập số Kw" />
+        <button class="btn" onclick="handlePayment()">Tính tiền điện</button>
+        <div id="pInform_2">
+          <p>👉</p>
+        </div>
+      </div>
+
+      <!-- =============================================================== -->
+      <div id="Bai_Tap_3" class="tabcontent">
+        <h1>Bài Tập 3</h1>
+        <h2>💰 Tính thuế thu nhập cá nhân</h2>
+        <input id="typeFullName" type="text" placeholder="Nhập họ tên" />
+        <input id="typeIncome" type="number" placeholder="Tổng thu nhập năm" />
+        <input
+          id="typeDependents"
+          type="number"
+          placeholder="Số người phụ thuộc"
+        />
+        <button class="btn" onclick="handlePayTax()">Tính tiền thuế</button>
+        <div id="pInform_3">
+          <p>👉</p>
+        </div>
+      </div>
+
+      <!-- =============================================================== -->
+      <div id="Bai_Tap_4" class="tabcontent">
+        <h1>Bài Tập 4</h1>
+        <h2>🕸️ Tính tiền cáp</h2>
+        <select id="mySelect" onchange="myFunction()">
+          <option value="khachHang">Chọn loại khách hàng</option>
+          <option value="nhaDan">Nhà Dân</option>
+          <option value="doanhNghiep">Doanh Nghiệp</option>
+        </select>
+        <input id="txtCode" type="text" placeholder="Nhập mã khách hàng" />
+        <input id="numChannel" type="number" placeholder="Số kênh cao cấp" />
+        <input class="connect" id="numConnect" type="number" placeholder="Số kết nối" />
+        <button class="btn" onclick="handlePaymentCable()">Tính tiền cáp</button>
+        <div id="pInform_4">
+          <p>👉</p>
+        </div>
+      </div>
+    </div>
+    <!-- =============================================================== -->
+    <script src="./JS/BT1.js"></script>
+    <script src="./JS/BT2.js"></script>
+    <script src="./JS/BT3.js"></script>
+    <script src="./JS/BT4.js"></script>
+  </body>
+</html>
